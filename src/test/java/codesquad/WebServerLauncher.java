@@ -1,15 +1,15 @@
-package codequad;
-
-import java.io.File;
+package codesquad;
 
 import org.apache.catalina.startup.Tomcat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
+
 public class WebServerLauncher {
-	private static final Logger logger = LoggerFactory.getLogger(WebServerLauncher.class);
-	
-	public static void main(String[] args) throws Exception {
+    private static final Logger logger = LoggerFactory.getLogger(WebServerLauncher.class);
+
+    public static void main(String[] args) throws Exception {
         String webappDirLocation = "webapp/";
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(8080);
